@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts
+    scripts(src="/static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+block content 
+    section#introsection
+        div.intro Welcome to SS Dance Academy
+        div.quote Eat Sleep Dance Repeat
+    section#missionsection
+        h2 Our Mission
+        div.card
+            p Classic
+            div.card-box
+                div.card-image
+                    img(src="/static/d1.jpg")
+                div.card-content
+                    p This is the best dance website in the universe.
+        div.card
+            p Break Dance 
+            div.card-box
+                div.card-image
+                    img(src="/static/d2.jpg")
+                div.card-content
+                    p This is the best dance website in the universe.
+        div.card
+            p Hip-Hop
+            div.card-box
+                div.card-image
+                    img(src="/static/d3.jpg")
+                div.card-content
+                    p This is the best dance website in the universe.
+    section#sponsorssection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/apple.jpg", alt="Sponsers Image", class="spImage")
+            img(src="/static/redbull.jpg", alt="Sponsers Image", class="spImage")
+            img(src="/static/insta.jpg", alt="Sponsers Image", class="spImage")
+    
